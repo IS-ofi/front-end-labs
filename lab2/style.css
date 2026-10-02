@@ -1,0 +1,77 @@
+.square {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #d6d6d6e7;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.circles {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.lines {
+  position: absolute;
+  background-color: black;
+}
+
+.circles.firstCircleOne {
+  top: 5px;
+  left: 45px;
+}
+.circles.firstCircleTwo {
+  top: 45px;
+  left: 5px;
+}
+.circles.firstCircleThree {
+  bottom: 5px;
+  left: 45px;
+}
+.circles.firstCircleFour {
+  top: 45px;
+  right: 5px;
+}
+
+.lines.firstLineOne {
+  top: 50px;
+  left: 45px;
+  width: 35px;
+  height: 3px;
+}
+.lines.firstLineTwo {
+  top: 10px;
+  left: 50px;
+  height: 50px;
+  width: 3px;
+}
+
+.circles.secondcircleOne {
+  transform: translate(45px, 5px);
+}
+.circles.secondcircleTwo {
+  transform: translate(5px, 45px);
+}
+.circles.secondcircleThree {
+  transform: translate(45px, 82px);
+}
+.circles.secondcircleFour {
+  transform: translate(82px, 45px);
+}
+
+.lines.secondLineOne {
+  width: 35px;
+  height: 3px;
+  transform: translate(45px, 50px);
+}
+.lines.secondLineTwo {
+  height: 50px;
+  width: 3px;
+  transform: translate(50px, 10px);
+}
