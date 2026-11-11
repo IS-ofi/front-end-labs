@@ -6,9 +6,10 @@
     <meta name="keywords" content="Лабораторна робота №1, ІС-44, Мішкурова" />
     <meta
       name="description"
-      content="Звітна сторінка з лабораторної роботи №1 студентки групи ІС-44 Софії Мішкурової"
+      content="Звітна сторінка з лабораторної роботи №4 студентки групи ІС-44 Софії Мішкурової"
     />
-    <title>Мішкурова С.В. ІС-44</title>
+    <title>Мішкурова С.В. ІС-44 Вар.147</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h2><b>Мішкурова Софія Вікторівна</b></h2>
@@ -30,13 +31,13 @@
       <li>"Таємна історія" Донна Тарт</li>
       <li>"Догмен", 2023</li>
     </ol>
-    <p>
+    <p id="target-element-8">
       Мдіна — це давня стародавня столиця Мальти, відома як «Місто тиші». Це
       одне з найкрасивіших середньовічних міст Європи, розташоване на вершині
       пагорба в центрі острова, звідки відкривається панорамний вигляд на всю
       Мальту.
     </p>
-    <p>
+    <p class="target-element-9">
       Історія: Місту понад 4000 років. Його заснували фінікійці, згодом
       перебудували римляни, а свій сучасний середньовічний вигляд з вузькими
       вуличками воно отримало завдяки норманам та лицарям-іоаннітам.
@@ -50,9 +51,25 @@
       Поп-культура: Саме Мдіна стала першим втіленням міста Королівська Гавань у
       першому сезоні серіалу «Гра престолів».
     </p>
-    <a
-      href="https://minerva-suites.com/uk/complete-guide-how-to-visit-mdina-malta/"
-      ><img src="mdina.png" alt="Мдіна" width="900" height="600"
-    /></a>
+    <div id="image-container">
+      <a
+        href="https://minerva-suites.com/uk/complete-guide-how-to-visit-mdina-malta/"
+        class="image-link"
+      >
+        <img
+          class="city-image"
+          src="mdina.png"
+          alt="Мдіна"
+          style="width: 900px; height: auto"
+        />
+      </a>
+    </div>
+    <div class="controls">
+      <button id="add-btn">Додати</button>
+      <button id="increase-btn">Збільшити</button>
+      <button id="decrease-btn">Зменшити</button>
+      <button id="delete-btn">Видалити</button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
