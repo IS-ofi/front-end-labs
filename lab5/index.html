@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Лабораторна робота №5, ІС-44, Мішкурова" />
+    <meta
+      name="description"
+      content="Звітна сторінка з лабораторної роботи №5 студентки групи ІС-44 Софії Мішкурової"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Мішкурова С.В. ІС-44 Вар.7</title>
+    <script src="data.js" defer></script>
+  </head>
+  <body>
+<h3>Завдання 1. Валідація форми (Варіант 12)</h3>
+
+    <form action="index.html" method="post">
+      <!-- Поле 1: ПІБ ТТТТТТ Т.Т. -->
+      <div class="form-row" id="row-pib">
+        1. ПІБ (ТТТТТТ Т.Т.):<br />
+        <input type="text" name="pib" value="" placeholder="Петренко О.В." />
+      </div>
+
+      <!-- Поле 5: ID-card ТТ №ЧЧЧЧЧЧ -->
+      <div class="form-row" id="row-idcard">
+        5. ID-card (ТТ №ЧЧЧЧЧЧ):<br />
+        <input type="text" name="idcard" value="" placeholder="АБ №123456" />
+      </div>
+
+      <!-- Поле 7: Дата народження ЧЧ.ЧЧ.ЧЧЧЧ -->
+      <div class="form-row" id="row-birthdate">
+        7. Дата народження (ЧЧ.ЧЧ.ЧЧЧЧ):<br />
+        <input type="text" name="birthdate" value="" placeholder="15.04.2005" />
+      </div>
+
+      <!-- Поле 8: Адреса м. ЧЧЧЧЧЧ -->
+      <div class="form-row" id="row-address">
+        8. Адреса (м. ЧЧЧЧЧЧ):<br />
+        <input type="text" name="address" value="" placeholder="м. 010012" />
+      </div>
+
+      <!-- Поле 9: e-mail тттттт@ттттт.com -->
+      <div class="form-row" id="row-email">
+        9. e-mail (тттттт@ттттт.com):<br />
+        <input type="text" name="email" value="" placeholder="student@gmail.com" />
+      </div>
+
+      <input type="hidden" name="hidden" value="ok" />
+      <input
+        type="submit"
+        value="Надіслати"
+        name="Submit"
+        onclick="return Formdata(this.form)"
+      />
+    </form>
+
+    <hr />
+
+    <h3>Завдання 2. Таблиця 6×6 (Варіант 7)</h3>
+    <label for="palette">Оберіть колір з палітри: </label>
+    <input type="color" id="palette" value="#ffcc00" />
+    <table id="myTable"></table>
+  </body>
+</html>
+  </body>
+</html>
